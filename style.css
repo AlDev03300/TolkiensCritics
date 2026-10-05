@@ -1,8 +1,10 @@
-*{
+*, 
+*::before,
+*::after
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
 }
 
 html{
@@ -14,6 +16,11 @@ html{
     --mid-color : #2FC809;
     --dark-color : #104403;
 }
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
 
 /* En-tête du site  */
 
@@ -31,7 +38,7 @@ header{
     padding: 2rem 5rem;
 }
 
-nav{
+nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
